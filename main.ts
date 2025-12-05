@@ -25,8 +25,9 @@ namespace ISD1820 {
         pins.digitalWritePin(pin, 0)
     }
 
-    /**
+ /**
      * 从指定引脚开始播放录音，播放时长可选 2/5/10 秒
+     * 实际播放时间 = 选择的时间 + 500 毫秒
      */
     //% block="从 %pin 引脚 开始播放录音 %seconds"
     //% pin.fieldEditor="gridpicker"
@@ -35,7 +36,7 @@ namespace ISD1820 {
     //% seconds.defl=RecordTime.Five
     export function play(pin: DigitalPin, seconds: RecordTime): void {
         pins.digitalWritePin(pin, 1)
-        basic.pause(seconds)
+        basic.pause(seconds + 500)  // 自动多播放 0.5 秒
         pins.digitalWritePin(pin, 0)
     }
 
