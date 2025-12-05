@@ -1,0 +1,12 @@
+{
+    "name": "isd1820-recorder",
+    "version": "0.0.1",
+    "description": "ISD1820 record & play control",
+    "license": "MIT",
+    "dependencies": {
+    },
+    "files": [
+        "main.ts",
+        "README.md"
+    ]
+}
