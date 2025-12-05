@@ -1,6 +1,6 @@
 {
     "name": "isd1820-recorder",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "ISD1820 record & play control",
     "license": "MIT",
     "dependencies": {
